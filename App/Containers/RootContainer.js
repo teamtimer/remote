@@ -1,16 +1,27 @@
 import React, { Component } from 'react'
-import { Text, View, StatusBar, Button, Alert } from 'react-native'
+import { Text, View, StatusBar, Button, Alert, StyleSheet} from 'react-native'
 import { connect } from 'react-redux'
 import Navigation from "../Navigation/AppNavigation"
 
+import ApplicationStyles from '../Themes/ApplicationStyles'
+import Metrics from '../Themes/Metrics'
+
 import ConfigActions from '../Redux/ConfigRedux'
+
+const styles = StyleSheet.create({
+    ...ApplicationStyles.screen,
+    statusBar: {
+      marginBottom: Metrics.navBarHeight
+    }
+})
+
 
 class RootContainer extends Component {
 
     render() {
         return (
-            <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-                <StatusBar barStyle={'default'} />
+            <View style={styles.container}>
+                <StatusBar style={styles.statusBar} barStyle={'default'} />
                 <Navigation />
             </View>
         )

@@ -5,8 +5,9 @@ class LoadingScreen extends Component
 {
     render(){
         return(
-            <Text>LoadingScreen</Text>
+            <Text> LoadingScreen</Text>
         );
     }
 }
 
+export default LoadingScreen
