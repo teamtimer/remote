@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, StatusBar, Button, Alert } from 'react-native'
 import { connect } from 'react-redux'
+import Navigation from "../Navigation/AppNavigation"
 
 import ConfigActions from '../Redux/ConfigRedux'
 
@@ -10,7 +11,7 @@ class RootContainer extends Component {
         return (
             <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
                 <StatusBar barStyle={'default'} />
-                <Text>RootContainer</Text>
+                <Navigation />
             </View>
         )
     }
