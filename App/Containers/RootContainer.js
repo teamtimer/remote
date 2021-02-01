@@ -22,7 +22,7 @@ class RootContainer extends Component {
         return (
             <View style={styles.container}>
                 <StatusBar style={styles.statusBar} barStyle={'default'} />
-                <Navigation />
+                <Navigation style={{width: Metrics.screenWidth, height: Metrics.screenHeight}} />
             </View>
         )
     }
