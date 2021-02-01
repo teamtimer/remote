@@ -1,5 +1,8 @@
 import Reactotron from 'reactotron-react-native'
+import Immutable from 'seamless-immutable'
 import { NativeModules } from 'react-native'
+import { reactotronRedux as reduxPlugin } from 'reactotron-redux'
+import sagaPlugin from 'reactotron-redux-saga'
 
 const scriptURL = NativeModules.SourceCode.scriptURL;
 const address = scriptURL.split('://')[1].split('/')[0];

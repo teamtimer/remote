@@ -9,7 +9,12 @@ export default StyleSheet.create({
         backgroundColor: "#1D1D1D",
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'flex-start'
+    },
+    contentContainer:{
+        padding: 20,
+        width: Metrics.screenWidth,
+        justifyContent: 'flex-start'
     },
     logo:{
         width: 100,
@@ -46,4 +51,24 @@ export default StyleSheet.create({
         alignItems: "center",
         borderRadius: 100,
     },
+    textInput:{
+        padding: 10,
+        borderRadius: 3,
+        backgroundColor: '#ffffff',
+        width: '100%',
+        marginTop: 30,
+    },
+    buttonText: {
+        color: '#ffffff',
+        fontSize: 17,
+    },
+    submitButton: {
+        marginTop: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#DB0069',
+        padding: 8,
+        borderRadius: 20,
+        width: 100
+    }
 })

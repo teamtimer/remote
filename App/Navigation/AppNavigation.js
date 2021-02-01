@@ -18,7 +18,7 @@ const Screens = () => {
             <Screen name="loading" component={LoadingScreen}/>
             <Screen name="connect" component={ConnectScreen}/>
         </Navigator> */
-        <Navigator style={{width: Metrics.screenWidth, height: Metrics.screenHeight }}>
+        <Navigator headerMode={'none'} style={{width: Metrics.screenWidth, height: Metrics.screenHeight }}>
              <Screen name="Login" component={LoginScreen}/>
         </Navigator>
         
